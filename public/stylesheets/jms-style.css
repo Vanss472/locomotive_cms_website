@@ -1,0 +1,100 @@
+/* style.scss */
+@font-face {
+  font-family: 'Entypo';
+  src: url("../fonts/entypo.eot");
+  src: local("Entypo"), url("../fonts/entypo.woff") format("woff"), url("../fonts/entypo.ttf") format("truetype"), url("../fonts/entypo.svg#Entypo") format("svg"); }
+
+h1, h2, h3, h4, h5, h6 {
+  color: #4e4e4e; }
+
+b {
+  color: #aa4797; }
+
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 80px;
+  z-index: 5;
+  background: #ebebeb; }
+  #header #site-title {
+    font-size: 20px;
+    color: white;
+    margin: 30px 80px; }
+  #header .icons {
+    font-family: 'Entypo';
+    font-size: 35px;
+    color: #bab7ba; }
+  #header .nav-bar {
+    background: #ebebeb; }
+    #header .nav-bar li {
+      line-height: 40px;
+      border: none; }
+      #header .nav-bar li:last-child {
+        border-right: none; }
+
+.row #main {
+  background: #ebebeb; }
+.row .page-panel {
+  padding: 100px 0 15em;
+  background: #ebebeb; }
+.row #panel-1 {
+  position: relative;
+  left: 40%;
+  top: 100px; }
+
+footer {
+  /*position: fixed;
+  bottom: 0;
+  left: 0;*/
+  /*border-top: 1px solid rgba(255, 255, 255, 0.3);*/
+  border-top: 1px solid rgba(0, 0, 0, 0.4);
+  box-shadow: inset -5px 2px 2px rgba(0, 0, 0, 0.3);
+  padding: 0;
+  background-image: url("../images/spray_gbp.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: white;
+  z-index: 5; }
+  footer .two {
+    /*width: 125px;*/
+    height: 30px;
+    background-color: #623C67;
+    font-size: 20px;
+    font-family: 'Arial';
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 5px 0 0 50px; }
+  footer #border-radius-bottom-left {
+    -webkit-border-radius: 0 0 0 10px;
+    -moz-border-radius: 0 0 0 10px;
+    border-radius: 0 0 0 10px; }
+
+#bottom {
+  height: 30px;
+  width: 100%;
+  background: #FFD700; }
+
+#we {
+  background-color: #FFF;
+  width: 100%;
+  height: 30px;
+  text-align: center;
+  position: relative;
+  cursor: pointer; }
+
+#button {
+  font-family: Helvetica, Arial;
+  color: #808284;
+  font-size: 12px;
+  position: absolute;
+  top: 15%;
+  margin-left: 12%;
+  font-weight: bold; }
+
+#ppForm {
+  width: 484px;
+  height: 180px;
+  background: #FFF;
+  margin-left: 12%;
+  display: none; }

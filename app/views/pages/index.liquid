@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=9" />
+	<!-- Set the viewport width to device width for mobile -->
+	<meta name="viewport" content="width=device-width" />
+
+	<title>{{ site.name }}</title>
+  
+	<!-- Included CSS Files -->
+	{{ 'offcanvas.css' | stylesheet_tag }}
+	{{ 'foundation.min.css' | stylesheet_tag }}
+  {{ 'jms-style.css' | stylesheet_tag }}
+
+	<!--[if lt IE 9]>
+		<link rel="stylesheet" href="css/ie.css">
+	<![endif]-->
+
+	{{ 'modernizr.foundation.js' | javascript_tag }}
+
+	<!-- IE Fix for HTML5 Tags -->
+	<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+  {{ 'parallax/libs/jq.js' | javascript_tag }}
+  {{ 'parallax/libs/xo.css' | stylesheet_tag }}
+
+  {{ 'parallax/parallax.min.js' | javascript_tag }}
+  {{ 'parallax/index.js' | javascript_tag }}
+  {{ 'parallax/examples.js' | javascript_tag }}
+  {{ 'parallax/index.css' | stylesheet_tag }}
+	
+</head>
+
+  <body id="page" class="off-canvas paneled">		
+	<div class="container">	
+	
+		<header id="header" class="row">	
+		  <div class="nine columns">
+		    <h1 id="site-title">John McNeil Studio</h1>
+		  </div>
+		  <div class="three columns">
+		    <nav id="menu" role="navigation" class="hide-for-small">
+  				<ul id="nav" class="nav-bar">
+  					<li><a href="#panel-1" class=" "><span class="icons">&#8505;</span></a></li>
+  					<li><a href="#panel-2" class=" "><span class="icons">&#9871;</span></a></li>
+  					<li><a href="#panel-3" class=" "><span class="icons">&#57349;</span></a></li>									
+  				</ul>											
+  			</nav>
+  			
+  		 	<dl class="tabs three-up show-for-small" id="switchPanels">
+	          <dd class="active"><a href="#panel-1">1</a></dd>
+	          <dd><a href="#panel-2">2</a></dd>
+	          <dd><a href="#panel-3">3</a></dd>
+  			</dl>
+		  </div>	
+		</header>	
+		
+		<div class="row">	
+				<section role="main" id="main">
+  		  <article id="panel-1" class="page-panel">
+				  <h1 id="">Everything is<br>
+            a chance to<br>
+            build a brand.</h1>
+				  <p><b>Branding Innovations Technology Design Production Motion & Image</b></p>
+				</article><!-- /#panel-1 -->
+
+
+  			<article id="panel-2" class="page-panel">
+  				<h1>PROJECTS</h1>
+     
+<div style="background: #333; margin: 0; border: 2px solid green; height: 700px; position: relative; ">
+    
+<div class="container">
+
+    <div id="index" class="leaguegothic white page"><!--this make the slide work-->
+      <div id="titlebox" class="f2 lghtgrey">
+        <div class="f5 white">PROJECTS</div>
+
+       
+          <!-- Grid Example -->
+      <div class="row">
+        <div class="twelve columns">
+          <div id="fromRightJun" class="clickable panel">
+            <p>This is a twelve column section in a row. Each of these includes a div.panel element so you can see where the columns are - it's not required at all for the grid.</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="six columns">
+          <div class="panel">
+            <p>Six columns</p>
+          </div>
+        </div>
+        <div class="six columns">
+          <div class="panel">
+            <p>Six columns</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="four columns">
+          <div class="panel">
+            <p>Four columns</p>
+          </div>
+        </div>
+        <div class="four columns">
+          <div class="panel">
+            <p>Four columns</p>
+          </div>
+        </div>
+        <div class="four columns">
+          <div class="panel">
+            <p>Four columns</p>
+          </div>
+        </div>
+      </div>
+        
+      </div>
+    </div><!--end index-->
+
+    <div id="jun" class="leaguegothic white page clickable">
+     <div style="border: 2px solid red; margin: 65px auto; width: 802px;">
+      <!--ADD ORBIT HERE-->
+      <div class="row">
+          <div class="twelve columns">
+            <div id="slider">
+              <img src="http://placehold.it/1000x400&text=[img 1]" />
+              <img src="http://placehold.it/1000x400&text=[img 2]" />
+              <img src="http://placehold.it/1000x400&text=[img 3]" />
+              <img src="http://placehold.it/1000x400&text=[img 4]" />
+            </div>
+            
+            <hr />
+          </div>
+        </div>
+        <!--ADD ORBIT END-->
+
+      <div class="center w400 " style="margin-top:20%;">
+        <div class="lh0 f0">JUNIPER BOO!</div>
+        <div style="font-size:47px">Click anywhere to head back.</div>
+      </div>
+      </div>
+    </div>
+
+
+   
+
+ 
+
+</div><!--end container-->
+
+
+  <div id="leftControl" class="control">
+    <img id="leftArrow" class="arrow left" style="width:60px" src="{{ 'parallax/arrowleft.png' | theme_image_url }}" />
+    <div id="leftText" class="dirText" style="float:right"> Test</div>
+  </div>
+
+  <div id="rightControl" class="control">
+    <img id="rightArrow" class="arrow right" style="width:60px" src="{{ 'parallax/arrowright2.png' | theme_image_url }}" />
+    <div id="rightText" class="dirText" style="float:left"> Test</div>
+  </div>
+
+  <div id="topControl" class="control center" style="width:145px;left:45%;">
+    <img id="topArrow" class="arrow left" style="height:60px" src="{{ 'parallax/arrowtop2.png' | theme_image_url }}" />
+    <div id="topText" class="dirText txtcenter" > Test</div>
+  </div>
+
+  <div id="bottomControl" class="control center" style="width:145px;left:45%;bottom:0px;">
+    <div id="bottomText" class="dirText txtcenter"> Test</div>
+    <img id="bottomArrow" class="arrow left" style="height:60px" src="{{ 'parallax/arrowbottom2.png' | theme_image_url }}" />
+
+  </div>
+
+ </div>
+				  				 
+  		  </article><!-- /#panel-2 -->
+
+
+			  <article id="panel-3" class="page-panel">
+				  <h1>ABOUT</h1>			
+				  <p>Quisque lacinia est a libero tempor quis gravida nibh luctus. Nulla facilisi. Vestibulum bibendum ipsum a lacus molestie pulvinar a nec risus. Nulla facilisi. Aenean nec tellus ligula. Ut tortor mi, consequat in ornare in, condimentum sed leo. Phasellus et luctus ipsum. Mauris gravida molestie velit ac iaculis. Integer quis libero id erat consectetur accumsan ut eget diam. In hac habitasse platea dictumst.</p>
+				   
+				</article><!-- /#panel-3 -->				
+ 
+		  </section>
+
+		</div>
+
+
+			
+    <footer class="site-footer row" role="contentinfo">
+      <div class="ten columns">
+        &nbsp;
+      </div>
+      <div id="border-radius-bottom-left" class="two columns">
+        
+            UP
+      </div>	
+    </footer>		
+  </div>
+	
+  {{ 'jquery.offcanvas.js' | javascript_tag }}
+
+    <!-- Included JS Files (Compressed) -->
+  {{ 'foundation.min.js' | javascript_tag }}
+
+  <script type="text/javascript">
+    $(window).load(function() {
+        $('#slider').orbit();
+    });
+  </script>
+
+</body>
